@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Afnan Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <header class="glass-nav">
+        <nav class="navbar">
+            <div class="logo">AFNAN<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="game.html">JS App</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="darkModeToggle" class="glow-btn">Light Mode</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="profile-container fade-in">
+        <div class="profile-header">
+            <h1 class="gradient-text" style="font-size: 3.5rem; text-align: center;">Professional Profile</h1>
+            <p class="section-subtitle" style="text-align: center; color: var(--text-muted); font-size: 1.2rem; margin-bottom: 3rem;">A closer look at my academic journey and technical capabilities.</p>
+        </div>
+        
+        <div class="bento-grid">
+            
+            <section class="glass-panel interactive-card col-span-full delayed">
+                <h2><span class="neon-icon">🎯</span> Career Objective</h2>
+                <p class="objective-text">To secure a challenging position as an IoT/AI Engineer where I can leverage my academic foundation in Electronic Engineering to design, develop, and implement smart, scalable connected systems that solve real-world problems.</p>
+            </section>
+
+            <section class="glass-panel interactive-card col-span-full delayed">
+                <h2><span class="neon-icon">🎓</span> Educational Background</h2>
+                <div class="table-responsive">
+                    <table class="neo-table">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Institution</th>
+                                <th>Qualification</th>
+                                <th>Result / CGPA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>2025 - 2027</strong></td>
+                                <td>KKTM Petaling Jaya</td>
+                                <td>Diploma in Electronic Engineering (IoT)</td>
+                                <td><span class="neon-badge">Current: 3.88</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>2020 - 2024</strong></td>
+                                <td>Kolej Permata Insan</td>
+                                <td>Sijil Pelajaran Malaysia (SPM)</td>
+                                <td>7A 2B</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <div class="glass-panel interactive-card delayed">
+                <h3><span class="neon-icon">💻</span> Technical Skills</h3>
+                <ul class="skill-list">
+                    <li>
+                        <div class="skill-header"><span>HTML5 & CSS3</span> <span>90%</span></div>
+                        <div class="progress-track"><div class="progress-fill neon-fill" style="width: 90%;"></div></div>
+                    </li>
+                    <li>
+                        <div class="skill-header"><span>JavaScript</span> <span>80%</span></div>
+                        <div class="progress-track"><div class="progress-fill neon-fill" style="width: 80%;"></div></div>
+                    </li>
+                    <li>
+                        <div class="skill-header"><span>IoT Sensors & ESP32</span> <span>85%</span></div>
+                        <div class="progress-track"><div class="progress-fill neon-fill" style="width: 85%;"></div></div>
+                    </li>
+                    <li>
+                        <div class="skill-header"><span>AutoCAD / Proteus</span> <span>75%</span></div>
+                        <div class="progress-track"><div class="progress-fill neon-fill" style="width: 75%;"></div></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glass-panel interactive-card delayed">
+                <h3><span class="neon-icon">🤝</span> Soft Skills</h3>
+                <ul class="skill-list">
+                    <li>
+                        <div class="skill-header"><span>Problem Solving</span> <span>95%</span></div>
+                        <div class="progress-track"><div class="progress-fill neon-fill" style="width: 95%;"></div></div>
+                    </li>
+                    <li>
+                        <div class="skill-header"><span>Team Leadership</span> <span>85%</span></div>
+                        <div class="progress-track"><div class="progress-fill neon-fill" style="width: 85%;"></div></div>
+                    </li>
+                    <li>
+                        <div class="skill-header"><span>Effective Communication</span> <span>90%</span></div>
+                        <div class="progress-track"><div class="progress-fill neon-fill" style="width: 90%;"></div></div>
+                    </li>
+                    <li>
+                        <div class="skill-header"><span>Adaptability</span> <span>88%</span></div>
+                        <div class="progress-track"><div class="progress-fill neon-fill" style="width: 88%;"></div></div>
+                    </li>
+                </ul>
+            </div>
+
+            <section class="glass-panel interactive-card col-span-full delayed">
+                <h2><span class="neon-icon">🏅</span> Achievements & Certifications</h2>
+                <ul class="achievement-list">
+                    <li class="achievement-item">
+                        <span class="icon glow-icon">🏆</span>
+                        <div class="achievement-text">
+                            <strong>Best Research Paper Award in Social Science</strong>
+                            <span>IJURECON 2024</span>
+                        </div>
+                    </li>
+                    <li class="achievement-item">
+                        <span class="icon glow-icon">📱</span>
+                        <div class="achievement-text">
+                            <strong>Top 10 National Finalists</strong>
+                            <span>UMPSA x HUAWEI AppGallery Mobile App Competition</span>
+                        </div>
+                    </li>
+                    <li class="achievement-item">
+                        <span class="icon glow-icon">🌟</span>
+                        <div class="achievement-text">
+                            <strong>Dean's List Award</strong>
+                            <span>Semester 1 & 2</span>
+                        </div>
+                    </li>
+                    <li class="achievement-item">
+                        <span class="icon glow-icon">🥈</span>
+                        <div class="achievement-text">
+                            <strong>Silver Award Innovation</strong>
+                            <span>Young Brainer Competition (YBC) 2026</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="footer-content" style="text-align: center; padding: 2rem;">
+            <p>&copy; 2026 Afnan Jasmin. DFI20433 Web Development.</p>
+            <button id="backToTop" class="hidden glow-btn" style="position: fixed; bottom: 20px; right: 20px;">↑</button>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
