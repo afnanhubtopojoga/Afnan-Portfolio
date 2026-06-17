@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biometric Calc | Afnan Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <header class="glass-nav">
+        <nav class="navbar">
+            <div class="logo">AFNAN<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="game.html" class="active">JS App</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="darkModeToggle" class="glow-btn">Light Mode</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="app-container fade-in">
+        <div class="profile-header" style="text-align: center; margin-bottom: 3rem;">
+            <h1 class="gradient-text" style="font-size: 3.5rem;">Biometric Analysis.</h1>
+            <p class="section-subtitle" style="color: var(--text-muted); font-size: 1.2rem;">Input physical parameters to calculate and evaluate your Body Mass Index system.</p>
+        </div>
+        
+        <div class="calculator-wrapper glass-panel interactive-card">
+            <div class="input-section neo-form">
+                <div class="form-group">
+                    <label for="weight">Weight Mass (kg)</label>
+                    <input type="number" id="weight" placeholder="e.g. 65" min="1" class="neo-input">
+                </div>
+                <div class="form-group">
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height" placeholder="e.g. 175" min="1" class="neo-input">
+                </div>
+                <div class="calc-buttons" style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                    <button id="calculateBtn" class="btn primary-btn" style="flex: 1;">Run Diagnostics</button>
+                    <button id="resetBtn" class="btn secondary-btn" style="flex: 0.5;">Reset</button>
+                </div>
+            </div>
+
+            <div class="result-section hidden" id="resultCard">
+                <div class="result-display">
+                    <h2 id="bmiScore" class="neon-score">00.0</h2>
+                    <h3 id="bmiCategory" class="neon-status-badge">Awaiting Data</h3>
+                </div>
+                
+                <div class="bmi-scale">
+                    <div class="scale-bar-tech">
+                        <div class="indicator-glow" id="bmiIndicator"></div>
+                    </div>
+                    <div class="scale-labels" style="color: var(--text-muted); font-size: 0.85rem; margin-top: 8px;">
+                        <span>Under</span>
+                        <span>Normal</span>
+                        <span>Over</span>
+                        <span>Obese</span>
+                    </div>
+                </div>
+                
+                <p id="healthRec" class="recommendation-text"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="footer-content" style="text-align: center; padding: 2rem;">
+            <p>&copy; 2026 Muhammad Afnan. DFI20433 Web Development.</p>
+            <button id="backToTop" class="hidden glow-btn" style="position: fixed; bottom: 20px; right: 20px;">↑</button>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
